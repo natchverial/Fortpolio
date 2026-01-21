@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7ff;
+    color: #003f5c;
+    margin: 0;
+    padding: 0;
+}
+.headers{
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #00aaff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #0077cc;
+    text-decoration: underline;
+
+    
+}
+
+.header-box-for-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Home Section */
+.home-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #e0f7ff, #a3daff);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #0077cc;
+    margin: 20px 0;
+    box-shadow: 0 0 15px #0077cc;
+}
+
+.btn {
+    display: inline-block;
+    background: #00aaff;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.5);
+}
+
+.btn:hover {
+    background: #0088cc;
+    box-shadow: 0 5px 20px rgba(0, 136, 204, 0.7);
+}
+
+/* Typewriter Effect */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #004080;
+    font-size: 18px;
+    width: 0;
+    animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Classmates Grid */
+.classmates-grid ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.classmates-grid ul li {
+    background: #00aaff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+    color: white;
+}
+
+.classmates-grid ul li:hover {
+    background: #0088cc;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #00aaff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #a3daff;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1100px;
+    border-radius: 10px;
+}
+
+.abouthead{
+    display: flex;
+}
+
+.aboutbox1{
+    height: 450px;
+   
+
+}
+
+.aboutbox1 img{
+    border-radius: 20px;
+
+}
+
+#about h2 {
+    font-size: 32px;
+    color: #003f5c;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-size: 24px;
+    color: #0077cc;
+    margin-top: 30px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 18px;
+    padding: 5px 0;
+    color: #003f5c;
+}
+
+#about p {
+    font-size: 18px;
+    color: #004080;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.classmates-grid2 ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.classmates-grid2 ul li {
+    background: #00aaff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+    color: white;
+}
+
+.classmates-grid2 ul li:hover {
+    background: #0088cc;
+    cursor: pointer;
+}
+
+/* Contact Section */
+#contact {
+    background-color :#a3daff;
+    padding: 40px;
+    color:  #004080;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contact a {
+    display: inline-block;
+    color: #004080;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#contact a i {
+    margin-right: 8px;
+}
+
+#contact a:hover {
+    color: #003f5c;
+    transform: scale(1.1);
+}
+
+/* Contact Form */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        padding: 30px;
+    }
+    
+    #about h2 {
+        font-size: 28px;
+    }
+    
+    #about h3 {
+        font-size: 22px;
+    }
+    nav ul {
+        display: none;
+    }
+    .header-box-for-menu {
+        display: block;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+    .header-box-for-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+    .classmates-grid ul {
+        grid-template-columns: 1fr;
+    }
+    .classmates-grid2 ul {
+        grid-template-columns: 1fr;
+    }
+    .map-container {
+        padding-bottom: 75%; /* Aspect ratio 4:3 for better fit on mobile */
+    }
+}
+
+@media (max-width: 1024px) {
+    .classmates-grid ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Make the map responsive on mobile devices */
+.responsive-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) { /* Mobile phones */
+    .map-container {
+        padding-bottom: 75%; /* Aspect ratio 4:3 for better fit on mobile */
+    }
+}
+
+
